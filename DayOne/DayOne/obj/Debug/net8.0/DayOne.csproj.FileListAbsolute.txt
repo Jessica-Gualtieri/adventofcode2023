@@ -12,3 +12,5 @@ C:\Users\Jessica\Desktop\development\adventofcode2023\DayOne\DayOne\obj\Debug\ne
 C:\Users\Jessica\Desktop\development\adventofcode2023\DayOne\DayOne\obj\Debug\net8.0\DayOne.pdb
 C:\Users\Jessica\Desktop\development\adventofcode2023\DayOne\DayOne\obj\Debug\net8.0\DayOne.genruntimeconfig.cache
 C:\Users\Jessica\Desktop\development\adventofcode2023\DayOne\DayOne\obj\Debug\net8.0\ref\DayOne.dll
+C:\Users\Jessica\Desktop\development\adventofcode2023\DayOne\DayOne\obj\Debug\net8.0\DayOne.sourcelink.json
+C:\Users\Jessica\Desktop\development\adventofcode2023\DayOne\DayOne\bin\Debug\net8.0\input.txt
