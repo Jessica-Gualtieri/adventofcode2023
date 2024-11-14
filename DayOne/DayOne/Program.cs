@@ -9,6 +9,7 @@ int total = 0;
 while (!streamReader.EndOfStream)
 {
     line = streamReader.ReadLine();
+    line = ReplaceSpellWithDigit(line);
     char[] characters = line?.ToCharArray();
     List<int> digitInLine = new List<int>();
     foreach (char character in characters)
@@ -27,3 +28,30 @@ while (!streamReader.EndOfStream)
 }
 
 Console.WriteLine(total);
+
+string ReplaceSpellWithDigit(string input)
+{
+    Dictionary<string, int> spellsDigits = new Dictionary<string, int>()
+    {
+        { "zero" , 0 },
+        { "one" , 1 },
+        { "two" , 2 },
+        { "three" , 3 },
+        { "four" , 4 },
+        { "five" , 5 },
+        { "six" , 6 },
+        { "seven" , 7 },
+        { "eight" , 8 },
+        { "nine" , 9 },
+    };
+    foreach (KeyValuePair<string, int> key in spellsDigits)
+    {
+        Regex regex = new Regex(key.Key);
+        if (regex.IsMatch(input))
+        {
+            input = input.Replace(key.Key, key.Value + key.Key);
+        }
+    }
+
+    return input;
+}
